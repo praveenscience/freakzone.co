@@ -29,3 +29,11 @@ body::after {
   text-shadow: 0 0 5px #ccc;
   padding: 15px 0;
 }
+.App .Image {
+  text-align: center;
+}
+.App .Image img {
+  vertical-align: middle;
+  box-shadow: 0 0 10px #9f9;
+  border-radius: 10px;
+}
