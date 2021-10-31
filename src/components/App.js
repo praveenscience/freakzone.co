@@ -18,6 +18,15 @@ const App = () => {
     const [x1, y1, x2, y2] = arr;
     return x <= x2 && x >= x1 && y <= y2 && y >= y1;
   };
+  const handleImage = e => {
+    const [x, y] = [
+      e.pageX - e.target.offsetLeft,
+      e.pageY - e.target.offsetTop
+    ];
+    if (check(x, y, HotPoints[Image])) {
+      setImage((Image + 1) % Images.length);
+    }
+  };
   return (
     <div className="App">
       <h1>Find Stuff!</h1>
