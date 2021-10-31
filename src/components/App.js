@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const App = () => {
+  const [Image, setImage] = useState(0);
   const Images = [
     "https://i.imgur.com/PahL6NP.png",
     "https://i.imgur.com/hOmFOle.png",
@@ -11,7 +12,7 @@ const App = () => {
     <div className="App">
       <h1>Find Stuff!</h1>
       <div className="Image">
-        <img src="https://i.imgur.com/PahL6NP.png" alt="Find Stuff!" />
+        <img src={Images[Image]} alt="Find Stuff!" />
       </div>
     </div>
   );
