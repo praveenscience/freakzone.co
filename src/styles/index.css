@@ -18,3 +18,7 @@ body::after {
   z-index: 1;
   background: rgba(0, 0, 0, 0.5);
 }
+.App {
+  position: relative;
+  z-index: 2;
+}
