@@ -31,7 +31,7 @@ const App = () => {
     <div className="App">
       <h1>Find Stuff!</h1>
       <div className="Image">
-        <img src={Images[Image]} alt="Find Stuff!" />
+        <img src={Images[Image]} alt="Find Stuff!" onClick={handleImage} />
       </div>
     </div>
   );
